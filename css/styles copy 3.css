@@ -46,12 +46,8 @@ body {
     width: 1158px;
     padding-left: 156px;
     padding-right: 156px;
-    
-  
-
+    /* margin: 0 auto;   */
 }
-
-
 
 /* General Styles */
 
@@ -86,9 +82,6 @@ body {
 
 /* 1. button - doesn't automatically inherit font-family*/
 .button {
-
-    display: block;
-    
     font-family: inherit;
     font-size: 16px;
     font-style: normal;
@@ -97,22 +90,15 @@ body {
     letter-spacing: 0.64px;
     cursor: pointer;
 
-
     border: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-
-}
-
 .section-title {
-    width: 1158px;
-    padding-bottom: 72px;
-
+    width: 1128px;
+    padding-top: 120px;
+    margin-bottom: 72px;
    
     
 
@@ -148,8 +134,8 @@ body {
 
 .header {
     width: 1440px;
-
-
+    height: 72px;
+    flex-shrink: 0;
     background-color: var(--primary-background-color);
     border-bottom: 1px solid var(--border-bottom-color);
 }
@@ -163,20 +149,18 @@ body {
 }
 
 .header-logo {
-    display: flex;
-    align-items: center;
 
     padding-right: 76px;
-
-    
+    display: inline-flex;
+    height: 24px;
+    align-items: center;
  
 }
 
 .header-list {
-    display: flex;
-    align-items: flex-start;
-
     padding-right: 332px;
+    display: inline-flex;
+    align-items: flex-start;
     gap: 40px;
 
 }
@@ -231,8 +215,8 @@ body {
 
 /* HERO SECTION */
 
-.hero-section {
-
+.hero {
+   
     width: 1440px;
     height: 600px;
 
@@ -240,8 +224,8 @@ body {
 }
 
 .hero-title {
-    width: 1158px;
-    padding-top: 68px;
+    width: 1128px;
+    padding-top: 188px;
     padding-left: 316px;
     padding-right: 316px;
 
@@ -262,7 +246,7 @@ body {
 .hero-button {
     margin-top: 48px;
     margin-left: 480px;
-    margin-bottom: 188px;
+    margin-bottom: 479px;
     display: flex;
     padding: 16px 32px;
     align-items: flex-start;
@@ -284,26 +268,22 @@ body {
 
 /* BENEFIT SECTION */
 
-.benefits-section {
-    width: 1158px;
+.benefits {
 
+    width: 1128px;
+    height: 104px;
+    margin-top: 120px;
+
+    
 }
 
-
 .benefit-list {
-    width: 264px;
     display: flex;
-    /* flex-direction: row;
-    align-items: flex-start; */
+    flex-direction: row;
+    align-items: flex-start;
     gap: 24px;
 
-    margin-bottom: -160px;
-
- }
-
-.benefits-item {
-    width: calc(100% - 20px / 4);
-} */
+}
 
 .benefit-item-title{
     color: var(--top-text-color);
@@ -314,27 +294,34 @@ body {
     color: var(--bottom-text-color);
 }
 
+/* .benefits-item {
+    width: 264px;
+    flex-basis: calc(100% / 4 - 20px);
+} */
 
 /* WHAT WE DO SECTION */
 
-.what-we-do-section {
-    width: 1158px;
-
+.what-we-do {
+    width: 1128px;
+    height: 412px;
     
 }
 
 .what-we-do-list {
     
     display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
     align-items: center;
     gap: 24px;
+    margin-bottom: 120px;
 
 }
 
 .what-we-do-item {
     
-    width: calc(100% - 24px / 3);
+    flex-basis: calc(100% / 3 - 20px);
 
 
     border: 1px solid var(--border-bottom-color);
@@ -343,16 +330,18 @@ body {
 
 /* OUR TEAM SECTION */
 
-.team-section {
+.team {
     width: 1440px;
+    height: 732px;
+    margin-top: 240px;
+
 
     background: var(--team-background-color);
 }
 
-
 .team-list {
     
- 
+    margin-bottom: 120px;
     display: inline-flex;
     padding-bottom: 0px;
     flex-direction: row;
@@ -366,7 +355,7 @@ body {
 
 .team-item {
     
-    width: calc(100% - 20px / 4);
+    flex-basis: calc(100% / 4 - 20px);
 
     border-radius: 0px 0px 4px 4px;
     background: var(--primary-background-color);
@@ -403,13 +392,13 @@ body {
 
 .footer-container {
     width: 264px;
- 
+    height: 112px;
     padding: 100px 1020px 100px 0px;
 }
 
 .footer-logo {
     display: inline-flex;
-  
+    height: 24px;
     align-items: center;
     flex-shrink: 0;
 }
@@ -433,50 +422,34 @@ body {
 }
 
 /* Portfolio Section     */
+.filters {
+    width: 586px;
+    height: 48px;
 
-/* .filter-container {
+}
+/* 
+.filter-navigation {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+
 } */
 
-.filter-list {
-    padding-top: 96px;
+.filters-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-}
-
-.filter-button-text {
-    color: var(--primary-brand-color);
-    text-align: center;
-
-    font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-        /* 150% */
-        letter-spacing: 0.64px;
+        padding-top: 24px;
+        padding-bottom: 24px;
 }
 
 .filter-button {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
-    
+    display: flex;
     padding: 12px 24px;
-    border: none;
+    align-items: flex-start;
 
     border-radius: 4px;
     border: 1px solid var(--border-bottom-color);
     background: var(--team-background-color);
-}
-
-.filter-button:hover,
-.filter-button:focus {
-    color: #FFFFFF;
-
 }
 
 
@@ -488,19 +461,15 @@ body {
 
 .portfolio-list {
 
-    width: 1158px;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 72px;
-    padding-bottom: 120px;
-  
+   
 }
 
-.portfolio-item>.portfolio-name,
+portfolio-item>.portfolio-name,
 .base>.portfolio-name {
-
+    padding: 10px;
     font-size: 20px;
 
 }
@@ -519,73 +488,37 @@ body {
 }
 
 .portfolio-item>.portfolio-type {
-
+    /*   font-family: 'Roboto'; */
     letter-spacing: -0.05em;
 }
 
+
 .portfolio-item {
-    margin: 12px 0 0 12px;
+    margin: 20px 0 0 20px;
     flex-basis: calc(100% / 3 - 20px);
 
 }
 
 .portfolio-item,
 .base {
-    /* box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); */
-
-    border: 1px solid var(--border-bottom-color);
-
-
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    text-align: center;
 }
+
 .portfolio-item:nth-child(1) img {
     object-fit: fill;
-    width: 100%;
 
 }
 
 .portfolio-item:nth-child(2) img {
     object-fit: fill;
-    width: 100%;
 }
 
 .portfolio-item:nth-child(3) img {
     object-fit: fill;
-    width: 100%;
 }
 
 .portfolio-item:nth-child(4) img {
     object-fit: fill;
-    width: 100%;
 }
-
-.portfolio-item:nth-child(5) img {
-    object-fit: fill;
-    width: 100%;
-}
-
-.portfolio-item:nth-child(6) img {
-    object-fit: fill;
-    width: 100%;
-}
-
-.portfolio-item:nth-child(7) img {
-    object-fit: fill;
-    width: 100%;
-}
-
-.portfolio-item:nth-child(8) img {
-    object-fit: fill;
-    width: 100%;
-}
-
-.portfolio-item:nth-child(9) img {
-    object-fit: fill;
-    width: 100%;
-}
-
-.portfolio-info {
-    padding: 32px 16px;
-
-}
-

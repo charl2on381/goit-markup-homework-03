@@ -470,7 +470,7 @@ body {
 
     border-radius: 4px;
     border: 1px solid var(--border-bottom-color);
-    background: var(--team-background-color);
+    background-color: var(--team-background-color);
 }
 
 .filter-button:hover,

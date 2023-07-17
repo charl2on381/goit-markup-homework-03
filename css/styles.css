@@ -156,6 +156,7 @@ body {
 
 .header-navigation {
     display: flex;   
+    /* justify-content: center; */
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -165,7 +166,7 @@ body {
 .header-logo {
     display: flex;
     align-items: center;
-
+    
     padding-right: 76px;
 
     
@@ -175,7 +176,7 @@ body {
 .header-list {
     display: flex;
     align-items: flex-start;
-
+    justify-content: center;
     padding-right: 332px;
     gap: 40px;
 

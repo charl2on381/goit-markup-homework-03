@@ -481,10 +481,10 @@ body {
     
 } */
 
-.portfolio-container {
+/* .portfolio-container {
     display: flex;
     align-items: center;
-}
+} */
 
 .portfolio-list {
 
@@ -495,18 +495,22 @@ body {
     justify-content: center;
     margin-top: 72px;
     margin-bottom: 120px;
+    margin-left: -20px;
   
+}
+
+.portfolio-name {
+    padding-bottom: 10px;
 }
 
 .portfolio-item>.portfolio-name,
 .base>.portfolio-name {
-
+    padding: 10px;
     font-size: 20px;
 
 }
 
 .portfolio-item>.portfolio-name {
-    /*  font-family: Roboto; */
     font-weight: 700;
     letter-spacing: -0.05em;
 
@@ -514,6 +518,7 @@ body {
 
 .portfolio-item>.portfolio-type,
 .base>.portfolio-type {
+    padding: 0px;
     font-size: 14px;
 }
 

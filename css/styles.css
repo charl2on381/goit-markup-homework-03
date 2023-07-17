@@ -178,7 +178,7 @@ body {
     /* align-items: flex-start;
     padding-right: 332px; */
     gap: 40px;
-    margin-right: 300px;
+    /* margin-right: 300px; */
 
 }
 
@@ -204,9 +204,9 @@ body {
 
 
 .header-address {
-    /* margin-left: auto; */
+    margin-left: auto;
     display: flex;
-    
+
     gap: 40px;
 }
 

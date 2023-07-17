@@ -44,8 +44,8 @@ body {
 
 .container {
     width: 1158px;
-    padding-left: 156px;
-    /* padding-right: 156px; */
+    margin-left: 156px;
+    /* margin-right: 156px; */
     
   
 
@@ -178,8 +178,7 @@ body {
     /* align-items: flex-start;
     padding-right: 332px; */
     gap: 40px;
-    /* margin-right: 300px; */
-
+    margin-right: 332px;
 }
 
 .header-item {

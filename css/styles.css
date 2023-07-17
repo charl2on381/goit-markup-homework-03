@@ -305,6 +305,7 @@ body {
 }
 
 .benefit-item-description {
+    padding-top: 8px;
     width: 264px;
     color: var(--bottom-text-color);
 }

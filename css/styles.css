@@ -99,7 +99,6 @@ body {
 
 
     border: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
@@ -482,6 +481,11 @@ body {
     
 } */
 
+.portfolio-container {
+    display: flex;
+    align-items: center;
+}
+
 .portfolio-list {
 
     width: 1158px;
@@ -489,8 +493,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 72px;
-    padding-bottom: 120px;
+    margin-top: 72px;
+    margin-bottom: 120px;
   
 }
 
@@ -510,7 +514,6 @@ body {
 
 .portfolio-item>.portfolio-type,
 .base>.portfolio-type {
-    padding: 0px;
     font-size: 14px;
 }
 

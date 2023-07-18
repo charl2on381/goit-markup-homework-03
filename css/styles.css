@@ -174,29 +174,13 @@ body {
 }
 
 .logo {
-    margin-right: 76px;
-    display: flex;
-
-    align-items: space-between;
-    padding: 0px;
-    /* position: absolute;
-    width: 115px;
-    height: 24px;
-    left: 156px;
-    top: 27px; */
+   
     text-decoration: none;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
-
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    /* NAVY BLUE */
 
     color: #2E2F42;
 }
@@ -218,7 +202,8 @@ body {
 .header-list {
     display: flex;
     gap: 40px;
-    margin-right: 332px;
+    /* margin-right: 332px; */
+    margin-left: 76px;
 }
 
 .header-item {
@@ -419,17 +404,19 @@ body {
 }
 
 .footer-logo {
-    display: inline-flex;
-  
-    align-items: center;
-    flex-shrink: 0;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 
 .footer-text {
 
     color: var(--footer-text-color);
-    margin-top: 8px;
+    margin-top: 18px;
     
  
     font-size: 16px;
